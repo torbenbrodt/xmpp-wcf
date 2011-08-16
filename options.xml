@@ -9,7 +9,7 @@
 		</categories>
 		
 		<options>
-			<option name="module_chat">
+			<option name="module_xmpp">
 				<categoryname>module.content</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>

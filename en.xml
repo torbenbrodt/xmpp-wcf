@@ -9,8 +9,8 @@
 	</category>
 	<!-- ACP -->
 	<category name="wcf.acp.option">
-		<item name="wcf.acp.option.module_chat"><![CDATA[XMPP Integration]]></item>
-		<item name="wcf.acp.option.module_chat.description"><![CDATA[Enables the XMPP Integration.]]></item>
+		<item name="wcf.acp.option.module_xmpp"><![CDATA[XMPP Integration]]></item>
+		<item name="wcf.acp.option.module_xmpp.description"><![CDATA[Enables the XMPP Integration.]]></item>
 		<item name="wcf.acp.option.category.general.http.chat"><![CDATA[Chat]]></item>
 		<item name="wcf.acp.option.category.general.http.chat.description"><![CDATA[]]></item>
 		<item name="wcf.acp.option.xmpp_http"><![CDATA[XMPP HTTP-binding]]></item>
