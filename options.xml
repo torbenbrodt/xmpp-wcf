@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<categories>
+			<category name="general.http.chat">
+				<parent>general.http</parent>
+				<showorder>1</showorder>
+			</category>
+		</categories>
+		
+		<options>
+			<option name="module_chat">
+				<categoryname>module.content</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="xmpp_http">
+				<categoryname>general.http.chat</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue></defaultvalue>
+				<showorder>1</showorder>
+			</option>
+		</options>
+	</import>
+</data>

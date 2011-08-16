@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "http://www.woltlab.com/DTDs/language.dtd">
+<language languagecode="en">
+	<category name="wcf.usersOnline">
+		<item name="wcf.usersOnline.location.chat"><![CDATA[<a href="index.php?page=Chat{@SID_ARG_2ND}">Chat</a>]]></item>
+	</category>
+	<category name="wcf.header.menu">
+		<item name="wcf.header.menu.chat"><![CDATA[Chat]]></item>
+	</category>
+	<!-- ACP -->
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.module_chat"><![CDATA[XMPP Integration]]></item>
+		<item name="wcf.acp.option.module_chat.description"><![CDATA[Enables the XMPP Integration.]]></item>
+		<item name="wcf.acp.option.category.general.http.chat"><![CDATA[Chat]]></item>
+		<item name="wcf.acp.option.category.general.http.chat.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.xmpp_http"><![CDATA[XMPP HTTP-binding]]></item>
+		<item name="wcf.acp.option.xmpp_http.description"><![CDATA[To run the example you'll also need an HTTP server with proxy capabilities because it's not allowed to make cross-domain AJAX requests.]]></item>
+	</category>
+</language>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTDs/headerMenu.dtd">
+<data>
+	<import>
+		<pagemenuitem name="wcf.header.menu.chat">
+			<iconmedium>chatM.png</iconmedium>
+			<iconsmall>chatS.png</iconsmall>
+			<link>index.php?page=Chat</link>
+			<showorder>5</showorder>
+			<position>header</position>
+			<options>module_xmpp</options>
+		</pagemenuitem>
+	</import>
+</data>
