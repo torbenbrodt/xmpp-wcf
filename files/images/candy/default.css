@@ -5,9 +5,7 @@
  * @author Patrick <patrick.stadler@amiadogroup.com>
  * @copyright 2011 Amiado Group AG, All rights reserved.
  */
-html, body {
-	margin: 0;
-	padding: 0;
+#candy {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,12 +20,12 @@ html, body {
 	overflow: hidden;
 }
 
-a {
+#candy a {
 	color: #333;
 	text-decoration: none;
 }
 
-ul {
+#candy ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;

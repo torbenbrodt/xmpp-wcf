@@ -15,9 +15,10 @@ class ChatPage extends AbstractPage {
 	 */
 	public function assignVariables() {
 		parent::assignVariables();
-		
+
 		WCF::getTPL()->assign(array(
-			'allowSpidersToIndexThisPage' => true
+			'allowSpidersToIndexThisPage' => true,
+			'username' => WCF::getUser()->userID ? WCF::getUser()->username : false
 		));
 	}
 	
