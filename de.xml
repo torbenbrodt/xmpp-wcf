@@ -11,9 +11,21 @@
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.module_xmpp"><![CDATA[XMPP Integration]]></item>
 		<item name="wcf.acp.option.module_xmpp.description"><![CDATA[Aktiviert die XMPP Integration.]]></item>
-		<item name="wcf.acp.option.category.general.http.chat"><![CDATA[Chat]]></item>
-		<item name="wcf.acp.option.category.general.http.chat.description"><![CDATA[]]></item>
-		<item name="wcf.acp.option.xmpp_http"><![CDATA[XMPP HTTP-binding]]></item>
-		<item name="wcf.acp.option.xmpp_http.description"><![CDATA[To run the example you'll also need an HTTP server with proxy capabilities because it's not allowed to make cross-domain AJAX requests.]]></item>
+		<item name="wcf.acp.option.category.general.http.xmpp"><![CDATA[XMPP]]></item>
+		<item name="wcf.acp.option.category.general.http.xmpp.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.general.http.xmpp.chat"><![CDATA[Chat]]></item>
+		<item name="wcf.acp.option.category.general.http.xmpp.chat.description"><![CDATA[]]></item>
+
+		<item name="wcf.acp.option.xmpp_domain"><![CDATA[Domain]]></item>
+		<item name="wcf.acp.option.xmpp_domain.description"><![CDATA[Server über den sich der Benutzer anmeldet. Beispiel: talk.easy-coding.de]]></item>
+		<item name="wcf.acp.option.xmpp_auth_cookie"><![CDATA[Cookie Login]]></item>
+		<item name="wcf.acp.option.xmpp_auth_cookie.description"><![CDATA[Insofern der XMPP Server die Authentifizierung mit Cookie & Salz erlaubt, müssen registrierte Benutzer durch Aktivieren dieser Funktion kein Passwort für XMPP Anfragen eingeben.]]></item>
+		
+		<item name="wcf.acp.option.xmpp_chat_http"><![CDATA[HTTP-binding]]></item>
+		<item name="wcf.acp.option.xmpp_chat_http.description"><![CDATA[Der Pfad über den das HTTP-bindung des Jabber Servers erreichbar ist. Unter Umständen muss eine .htaccess angelegt werden, siehe <a href="{@RELATIVE_WCF_DIR}acp/dereferrer.php?url=http://amiadogroup.github.com/candy/">github</a>.]]></item>
+		<item name="wcf.acp.option.xmpp_chat_autojoin"><![CDATA[Räume]]></item>
+		<item name="wcf.acp.option.xmpp_chat_autojoin.description"><![CDATA[Der HTTP Chat wird automatisch diese Räume betreten. Mehrere Räume können durch Zeilenumbruch getrennt eingegeben werden.]]></item>
+		<item name="wcf.acp.option.xmpp_chat_anonymous"><![CDATA[Anonymer Zugang]]></item>
+		<item name="wcf.acp.option.xmpp_chat_anonymous.description"><![CDATA[Insofern der XMPP Serer anonyme Logins erlaubt, kann diese Option aktiviert werden, damit sich Gäste über den Web-Chat anmelden können.]]></item>
 	</category>
 </language>

@@ -11,9 +11,21 @@
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.module_xmpp"><![CDATA[XMPP Integration]]></item>
 		<item name="wcf.acp.option.module_xmpp.description"><![CDATA[Enables the XMPP Integration.]]></item>
-		<item name="wcf.acp.option.category.general.http.chat"><![CDATA[Chat]]></item>
-		<item name="wcf.acp.option.category.general.http.chat.description"><![CDATA[]]></item>
-		<item name="wcf.acp.option.xmpp_http"><![CDATA[XMPP HTTP-binding]]></item>
-		<item name="wcf.acp.option.xmpp_http.description"><![CDATA[To run the example you'll also need an HTTP server with proxy capabilities because it's not allowed to make cross-domain AJAX requests.]]></item>
+		<item name="wcf.acp.option.category.general.http.xmpp"><![CDATA[XMPP]]></item>
+		<item name="wcf.acp.option.category.general.http.xmpp.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.general.http.xmpp.chat"><![CDATA[Chat]]></item>
+		<item name="wcf.acp.option.category.general.http.xmpp.chat.description"><![CDATA[]]></item>
+
+		<item name="wcf.acp.option.xmpp_domain"><![CDATA[Domain]]></item>
+		<item name="wcf.acp.option.xmpp_domain.description"><![CDATA[Server to authenticate. Example: talk.easy-coding.de]]></item>
+		<item name="wcf.acp.option.xmpp_auth_cookie"><![CDATA[Cookie Login]]></item>
+		<item name="wcf.acp.option.xmpp_auth_cookie.description"><![CDATA[Depending on the server authentication with cookie and salt may be allowed. Active this so that registered users don't need to enter their password for xmpp queries.]]></item>
+
+		<item name="wcf.acp.option.xmpp_chat_http"><![CDATA[XMPP HTTP-binding]]></item>
+		<item name="wcf.acp.option.xmpp_chat_http.description"><![CDATA[To run the chat you'll also need an HTTP server with proxy capabilities because it's not allowed to make cross-domain AJAX requests, see <a href="{@RELATIVE_WCF_DIR}acp/dereferrer.php?url=http://amiadogroup.github.com/candy/">github</a>.]]></item>
+		<item name="wcf.acp.option.xmpp_chat_autojoin"><![CDATA[Rooms]]></item>
+		<item name="wcf.acp.option.xmpp_chat_autojoin.description"><![CDATA[Autojoin to the following rooms. Enter multiple rooms divided by linebreak.]]></item>
+		<item name="wcf.acp.option.xmpp_chat_anonymous"><![CDATA[Anonymous Access]]></item>
+		<item name="wcf.acp.option.xmpp_chat_anonymous.description"><![CDATA[Depending on the server communication anonymous access is granted. Enable this to allow anonymous access via the webchat.]]></item>
 	</category>
 </language>

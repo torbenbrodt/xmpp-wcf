@@ -2,8 +2,12 @@
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
 	<import>
 		<categories>
-			<category name="general.http.chat">
+			<category name="general.http.xmpp">
 				<parent>general.http</parent>
+				<showorder>1</showorder>
+			</category>
+			<category name="general.http.xmpp.chat">
+				<parent>general.http.xmpp</parent>
 				<showorder>1</showorder>
 			</category>
 		</categories>
@@ -14,11 +18,37 @@
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
 			</option>
-			<option name="xmpp_http">
-				<categoryname>general.http.chat</categoryname>
+
+			<option name="xmpp_domain">
+				<categoryname>general.http.xmpp</categoryname>
 				<optiontype>text</optiontype>
-				<defaultvalue></defaultvalue>
+				<defaultvalue></defaultvalue><!-- e.g. talk.easy-coding.de -->
 				<showorder>1</showorder>
+			</option>
+			<option name="xmpp_auth_cookie">
+				<categoryname>general.http.xmpp</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>false</defaultvalue>
+				<showorder>2</showorder>
+			</option>
+			
+			<option name="xmpp_chat_http">
+				<categoryname>general.http.xmpp.chat</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue>http-bind/</defaultvalue>
+				<showorder>1</showorder>
+			</option>
+			<option name="xmpp_chat_autojoin">
+				<categoryname>general.http.xmpp.chat</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue></defaultvalue><!-- line separated e.g. www@conference.talk.easy-coding.de -->
+				<showorder>2</showorder>
+			</option>
+			<option name="xmpp_chat_anonymous">
+				<categoryname>general.http.xmpp.chat</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>true</defaultvalue>
+				<showorder>3</showorder>
 			</option>
 		</options>
 	</import>
