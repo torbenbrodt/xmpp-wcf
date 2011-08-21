@@ -14,7 +14,7 @@
 			Candy.init('{$xmpp_http}', {
 				core: {
 					debug: false
-					{if $autojoin_str},autojoin: [{@$autojoin_str}]{/if}
+					{if $xmpp_chat_autojoin},autojoin: [{@$xmpp_chat_autojoin}]{/if}
 				},
 				view: {
 					resources: '{@RELATIVE_WCF_DIR}images/candy/',
@@ -45,7 +45,7 @@
 
 	<p class="info">Die Chat Integration in das Forum befindet sich noch im Aufbau. Mehr unter : <a href="http://www.easy-coding.de/easy-coding-xmpp-server-talk-easy-coding-de-t7173.html">easy-coding XMPP Server - talk.easy-coding.de</a></p>
 
-	<div style="position:relative"><div id="candy"></div></div>
+	<div style="position:relative; height:500px; border:1px solid #afafaf"><div id="candy"></div><br style="clear:both" /></div>
 </div>
 
 {include file='footer' sandbox=false}

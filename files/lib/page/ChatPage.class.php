@@ -41,11 +41,10 @@ class ChatPage extends AbstractPage {
 		}
 		$autojoin_str = ltrim($autojoin_str, ',');
 		
-		
 		$username = '';
 		$password = '';
 		if(WCF::getUser()->userID) {
-			$username = urlencode(WCF::getUser()->username).'@'.XMPP_DOMAIN;
+			$username = rawurlencode(WCF::getUser()->username).'@'.XMPP_DOMAIN;
 			if(XMPP_AUTH_COOKIE) {
 				$password = WCF::getUser()->password.WCF::getUser()->salt;
 			}
@@ -56,7 +55,7 @@ class ChatPage extends AbstractPage {
 		WCF::getTPL()->assign(array(
 			'allowSpidersToIndexThisPage' => true,
 			'xmpp_lang' => $this->getLanguageCode(),
-			'xmpp_http' => XMPP_HTTP,
+			'xmpp_http' => XMPP_CHAT_HTTP,
 			'xmpp_domain' => XMPP_DOMAIN,
 			'xmpp_username' => $username,
 			'xmpp_password' => $password,

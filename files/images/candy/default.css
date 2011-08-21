@@ -107,7 +107,7 @@
 }
 
 #chat-toolbar {
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	right: 0;
 	font-size: 11px;
@@ -354,7 +354,7 @@
 }
 
 .message-form-wrapper {
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -366,7 +366,7 @@
 }
 
 .message-form {
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -388,7 +388,7 @@
 	cursor: pointer;
 	background-color: #ccc;
 	color: #666;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	right: 0;
 	margin: 3px 203px 3px 3px;
@@ -499,7 +499,7 @@
 	padding: 20px 5px;
 	color: white;
 	font-size: 16px;
-	position: fixed;
+	position: absolute;
 	left: 50%;
 	top: 50%;
 	margin-left: -155px;

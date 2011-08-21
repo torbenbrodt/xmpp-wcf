@@ -6,10 +6,6 @@
 				<parent>general.http</parent>
 				<showorder>1</showorder>
 			</category>
-			<category name="general.http.xmpp.chat">
-				<parent>general.http.xmpp</parent>
-				<showorder>1</showorder>
-			</category>
 		</categories>
 		
 		<options>
@@ -28,27 +24,27 @@
 			<option name="xmpp_auth_cookie">
 				<categoryname>general.http.xmpp</categoryname>
 				<optiontype>boolean</optiontype>
-				<defaultvalue>false</defaultvalue>
+				<defaultvalue>0</defaultvalue>
 				<showorder>2</showorder>
 			</option>
 			
 			<option name="xmpp_chat_http">
-				<categoryname>general.http.xmpp.chat</categoryname>
+				<categoryname>general.http.xmpp</categoryname>
 				<optiontype>text</optiontype>
 				<defaultvalue>http-bind/</defaultvalue>
-				<showorder>1</showorder>
+				<showorder>3</showorder>
 			</option>
 			<option name="xmpp_chat_autojoin">
-				<categoryname>general.http.xmpp.chat</categoryname>
+				<categoryname>general.http.xmpp</categoryname>
 				<optiontype>textarea</optiontype>
 				<defaultvalue></defaultvalue><!-- line separated e.g. www@conference.talk.easy-coding.de -->
-				<showorder>2</showorder>
+				<showorder>4</showorder>
 			</option>
 			<option name="xmpp_chat_anonymous">
-				<categoryname>general.http.xmpp.chat</categoryname>
+				<categoryname>general.http.xmpp</categoryname>
 				<optiontype>boolean</optiontype>
-				<defaultvalue>true</defaultvalue>
-				<showorder>3</showorder>
+				<defaultvalue>1</defaultvalue>
+				<showorder>5</showorder>
 			</option>
 		</options>
 	</import>
