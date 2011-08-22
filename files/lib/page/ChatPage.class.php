@@ -46,7 +46,7 @@ class ChatPage extends AbstractPage {
 		if(WCF::getUser()->userID) {
 			$username = rawurlencode(WCF::getUser()->username).'@'.XMPP_DOMAIN;
 			if(XMPP_AUTH_COOKIE) {
-				$password = WCF::getUser()->password.WCF::getUser()->salt;
+				$password = md5(WCF::getUser()->password.WCF::getUser()->salt);
 			}
 		} else if (XMPP_CHAT_ANONYMOUS) {
 			$username = XMPP_DOMAIN;
